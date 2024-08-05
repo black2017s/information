@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>information</h1>
+        <form id="validatorForm" onsubmit="validateForm(event)">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="text" id="email">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password">
+            </div>
+            <div>
+                <label>Gender</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+            <div>
+                <label>Sports</label>
+                <input type="checkbox" name="sports" value="tennis"> Tennis
+                <input type="checkbox" name="sports" value="running"> Running
+                <input type="checkbox" name="sports" value="football"> Football
+            </div>
+            <div>
+                <label for="country">Country</label>
+                <select id="country">
+                    <option value="">Select a country</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="eg">Egypt</option>
+                    <option value="uk">United Kingdom</option>
+                </select>
+            </div>
+            <div class="buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+        <div id="errorMessages" class="error-messages">
+            <!-- Error messages will be displayed here -->
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
